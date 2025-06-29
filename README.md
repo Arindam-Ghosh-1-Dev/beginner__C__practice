@@ -1,2 +1,3 @@
-# beginner-c-practice
-My beginner C programs
+# Basic Calculator in C
+
+This is a beginner level C programming that performs several progkramming
