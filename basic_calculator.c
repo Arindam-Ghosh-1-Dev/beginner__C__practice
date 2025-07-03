@@ -8,30 +8,41 @@ int main()
     printf("Hello West Bengal\n");
     printf("Hello Asansol\n");
     //Area Of Rectangle
-    int length, breadth, rad;
-    printf("Enter Length of Rectangle:\n");
+    int length, bredth, rad;
+    char c_1, c_2;
+    printf("Enter Length of Rectangle(in cm):\n");
     scanf("%d", &length);
-    printf("Enter Breadth of Rectangle:\n");
-    scanf("%d", &breadth);
-    printf("Area of the rectangle is %d\n", length*breadth);
+    printf("Enter Bredth of Rectangle(in cm):\n");
+    scanf("%d", &bredth);
+    printf("enter Unit(in two word for e.g., me:meter, cm:centimeter, mile:mi etc.)\n");
+    scanf("%c%c",  &c_1,&c_2);
+    printf("---------RESUlT-------------\n");
+    printf("Area of the rectangle having length %d %c%c and bredth %d %c%c is %d sq.%c%c\n", length, c_1, c_2, bredth, c_1, c_2, length*bredth, c_1, c_2);
+    printf("----------------------------\n");
     //Area Of Circle
     const float pi=3.14;
     printf("please Enter the Radius of the circle:\n");
     scanf("%d", &rad);
-    printf("Area of the circle is %f\n", pi*rad*rad);
+    printf("---------RESUlT-------------\n");
+    printf("Area of the circle of radius %d unit is %f sq.unit\n", rad, pi*rad*rad);
+    printf("----------------------------\n");
     //Volume Of Cylinder
     int height;
     printf("Enter height for can having same circular area:\n");
     scanf("%d", &height);
-    printf("volume of can having a same area circle at top  is %f\n", pi*rad*rad*height);
+    printf("---------RESUlT-------------\n");
+    printf("volume of can having radius %d and height %d at top  is %f\n", rad, height, pi*rad*rad*height);
+    printf("----------------------------\n");
     //Area Of Triangle
     const float tri=0.5;
     int t_base, t_height;
     printf("Enter Base of Right-Angled-Triangle:\n");
     scanf("%d", &t_base);
     printf("Enter Height of Right-Angled-Triangle:\n");
-    scanf("%d", t_height);
-    printf("The Area of triangle is %f\n", tri*t_base*t_height);
+    scanf("%d", &t_height);
+    printf("---------RESUlT-------------\n");
+    printf("The Area of triangle of base %d unit and height of %d is %f\n", tri*t_base*t_height);
+    printf("----------------------------\n");
     //Temperature converter:celcius to Ferenheit
     const float c_t_f=1.8;
     float cel;
